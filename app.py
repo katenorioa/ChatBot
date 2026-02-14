@@ -426,7 +426,7 @@ elif opcion == "Estudiante (Consultas)":
                            font-size: 2rem;
                            font-weight: 800;
                            margin-bottom: 0.5rem;">
-                    Hola, soy Lumen
+                    Hola, soy Dante
                 </h1>
                 <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.6; margin: 0;">
                     Tu asistente virtual inteligente para el curso de IA. 
@@ -444,7 +444,7 @@ elif opcion == "Estudiante (Consultas)":
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    if prompt := st.chat_input("Ej: ¿Qué temas aborda el Módulo 1?"):
+    if prompt := st.chat_input("Ej: ¿Qué temas aborda el Módulo 7?"):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
